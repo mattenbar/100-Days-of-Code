@@ -17,7 +17,7 @@ def encrypt(text, shift):
         newAlphabet.append(first_letter)
 
     for position in range(len(text)):
-        if not text[position] == " ":
+        if text[position] in alphabet:
             letter_index = alphabet.index(text[position]) 
             text[position] = newAlphabet[letter_index]
  
@@ -32,7 +32,7 @@ def decrypt(text,shit):
         newAlphabet.append(first_letter)
 
     for position in range(len(text)):
-        if not text[position] == " ":
+        if text[position] in alphabet:
             letter_index = newAlphabet.index(text[position]) 
             text[position] = alphabet[letter_index]
  
