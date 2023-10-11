@@ -26,7 +26,7 @@ while continuePlaying:
     
     print(f'Compare A: {people["A"]["name"]}, a {people["A"]["description"]}, from {people["A"]["country"]}')
     print(art.vs)
-    print(f'Compare A: {people["B"]["name"]}, a {people["B"]["description"]}, from {people["B"]["country"]}')
+    print(f'Compare B: {people["B"]["name"]}, a {people["B"]["description"]}, from {people["B"]["country"]}')
     guess = input("Who has more followers? Type 'A' or 'B': ")
     
     if guess == 'A' and people["A"]["follower_count"] > people["B"]["follower_count"]:
